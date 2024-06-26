@@ -11,6 +11,8 @@
 		502085BA2C24883900A7554E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502085B92C24883900A7554E /* ContentView.swift */; };
 		502085BC2C24883C00A7554E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502085BB2C24883C00A7554E /* Assets.xcassets */; };
 		502085BF2C24883C00A7554E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502085BE2C24883C00A7554E /* Preview Assets.xcassets */; };
+		502A113F2C2C58B900F49BD6 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A113E2C2C58B900F49BD6 /* CircularProfileImageView.swift */; };
+		502A11412C2C5E6D00F49BD6 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11402C2C5E6D00F49BD6 /* UserCell.swift */; };
 		509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */; };
 		509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */; };
 		50B000CC2C2627C100B3E511 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B000CA2C2627C100B3E511 /* RegistrationView.swift */; };
@@ -29,6 +31,8 @@
 		502085B92C24883900A7554E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		502085BB2C24883C00A7554E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		502085BE2C24883C00A7554E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		502A113E2C2C58B900F49BD6 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		502A11402C2C5E6D00F49BD6 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		50B000CA2C2627C100B3E511 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationView.swift; path = Views/RegistrationView.swift; sourceTree = SOURCE_ROOT; };
@@ -115,6 +119,7 @@
 		502085C82C248C9C00A7554E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				502A113D2C2C588000F49BD6 /* Components */,
 				50B000DA2C29D9F300B3E511 /* Activity */,
 				502085CB2C248E6A00A7554E /* Authentication */,
 				50B000D22C29D8FE00B3E511 /* Explore */,
@@ -166,6 +171,15 @@
 				50B000CA2C2627C100B3E511 /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		502A113D2C2C588000F49BD6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				502A113E2C2C58B900F49BD6 /* CircularProfileImageView.swift */,
+				502A11402C2C5E6D00F49BD6 /* UserCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		509E75282C25E99600DC5AB9 /* ViewModifiers */ = {
@@ -340,6 +354,8 @@
 				502085BA2C24883900A7554E /* ContentView.swift in Sources */,
 				50B000E32C29F60200B3E511 /* ThreadCell.swift in Sources */,
 				50B000DD2C29DA1600B3E511 /* ActivityView.swift in Sources */,
+				502A113F2C2C58B900F49BD6 /* CircularProfileImageView.swift in Sources */,
+				502A11412C2C5E6D00F49BD6 /* UserCell.swift in Sources */,
 				50B000D92C29D9A000B3E511 /* CreateThreadView.swift in Sources */,
 				509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */,
 				509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */,
