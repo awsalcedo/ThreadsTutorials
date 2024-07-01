@@ -31,7 +31,8 @@ struct ThreadsTabView: View {
                 .onAppear{ selectedTab = 1}
                 .tag(1)
             
-            CreateThreadView()
+            Text("") // Para evitar duplicidad de la vista se agrega una en blanco
+            //CreateThreadView()
                 .tabItem {
                     Image(systemName: "plus")
                 }
