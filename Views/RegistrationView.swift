@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State var email = ""
-    @State var password = ""
-    @State var fullname = ""
-    @State var username = ""
+    @StateObject var viewModel = RegistrationViewModel()
     @Environment (\.dismiss) var dismiss
+    
     var body: some View {
         VStack {
             Spacer()
@@ -23,21 +21,26 @@ struct RegistrationView: View {
                 .frame(width: 120, height: 120)
                 .padding()
             VStack {
-                TextField("Enter your email", text: $email)
+                TextField("Enter your email", text: $viewModel.email)
                     .modifier(ThreadsTextFieldModifier())
                 
-                SecureField("Enter yopur password", text: $password)
+                SecureField("Enter yopur password", text: $viewModel.password)
                     .modifier(ThreadsTextFieldModifier())
                 
-                TextField("Enter your full name", text: $fullname)
+                TextField("Enter your full name", text: $viewModel.fullname)
                     .modifier(ThreadsTextFieldModifier())
                 
-                TextField("Enter your username", text: $username)
+                TextField("Enter your username", text: $viewModel.username)
                     .modifier(ThreadsTextFieldModifier())
             }
             
             Button {
-                
+                /*
+                 Siempre que se usa await hay que envolverlo en un Task
+                 */
+                Task {
+                    try await viewModel.createUser()
+                }
             } label: {
                 Text("Sign Up")
                     .font(.subheadline)

@@ -20,6 +20,8 @@
 		502A114F2C3316E000F49BD6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 502A114E2C3316E000F49BD6 /* FirebaseFirestore */; };
 		502A11512C3316E000F49BD6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 502A11502C3316E000F49BD6 /* FirebaseFirestoreSwift */; };
 		502A11532C3316E000F49BD6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 502A11522C3316E000F49BD6 /* FirebaseStorage */; };
+		502A11572C333D0000F49BD6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */; };
+		502A11592C3341E200F49BD6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11582C3341E200F49BD6 /* AuthService.swift */; };
 		509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */; };
 		509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */; };
 		50B000CC2C2627C100B3E511 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B000CA2C2627C100B3E511 /* RegistrationView.swift */; };
@@ -43,6 +45,8 @@
 		502A11432C2C7A0E00F49BD6 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		502A11472C2DB96E00F49BD6 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		502A11492C3311CC00F49BD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		502A11582C3341E200F49BD6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		50B000CA2C2627C100B3E511 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationView.swift; path = Views/RegistrationView.swift; sourceTree = SOURCE_ROOT; };
@@ -166,6 +170,8 @@
 		502085CB2C248E6A00A7554E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				502A11552C333AB000F49BD6 /* Service */,
+				502A11542C333A9F00F49BD6 /* ViewModel */,
 				502085CD2C248F0500A7554E /* Views */,
 			);
 			path = Authentication;
@@ -219,6 +225,22 @@
 				502A11472C2DB96E00F49BD6 /* EditProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		502A11542C333A9F00F49BD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		502A11552C333AB000F49BD6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				502A11582C3341E200F49BD6 /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		509E75282C25E99600DC5AB9 /* ViewModifiers */ = {
@@ -401,7 +423,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B000D12C29D71E00B3E511 /* FeedView.swift in Sources */,
+				502A11572C333D0000F49BD6 /* RegistrationViewModel.swift in Sources */,
 				50B000CD2C2627C100B3E511 /* LoginView.swift in Sources */,
+				502A11592C3341E200F49BD6 /* AuthService.swift in Sources */,
 				502A11482C2DB96E00F49BD6 /* EditProfileView.swift in Sources */,
 				502085BA2C24883900A7554E /* ContentView.swift in Sources */,
 				50B000E32C29F60200B3E511 /* ThreadCell.swift in Sources */,

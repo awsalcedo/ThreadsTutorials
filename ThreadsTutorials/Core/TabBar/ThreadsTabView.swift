@@ -56,14 +56,14 @@ struct ThreadsTabView: View {
                 }
                 .onAppear { selectedTab = 4 }
                 .tag(4)
-    
+            
         }
         /*
          onChange se usa para ejecutar código en respuesta a cambios en la variable selectedTab
          */
-        .onChange(of: selectedTab, perform: { newValue in
+        .onChange(of: selectedTab) { newValue in
             showCreateThreadView = selectedTab == 2
-        })
+        }
         .sheet(isPresented: $showCreateThreadView, onDismiss: {
             selectedTab = 0
         }, content: {

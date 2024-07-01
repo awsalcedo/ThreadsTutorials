@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        @State var email = ""
-        @State var password = ""
         /*
          Para regresar entre la página de inicio de sesión
          y la de registro
