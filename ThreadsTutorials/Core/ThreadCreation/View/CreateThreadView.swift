@@ -9,6 +9,18 @@ import SwiftUI
 
 struct CreateThreadView: View {
     @State var caption = ""
+    // se usa para acceder a la funcionalidad de cerrar o descartar una vista.
+    /*
+     @Environment es una propiedad de envoltura que permite acceder a valores del entorno proporcionados por el sistema.
+     */
+    /*
+     (\.dismiss) es una clave de entorno para acceder a la acció de descartar una vista.
+     */
+    /*
+     El uso típico es en una vista modal o un sheet (este es nuestro caso cerrar la sheet de New Thread.
+     */
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         /*
          No hay navegación pero lo usamos para obtener la barra superior de navegación
@@ -49,7 +61,9 @@ struct CreateThreadView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {
+                        //Esta parte se le conoce como el handler del boton
                         
+                        dismiss()
                     }
                     .font(.subheadline)
                     .foregroundColor(.black)

@@ -10,6 +10,8 @@ import SwiftUI
 struct ThreadsTabView: View {
     //Para controlar la selección de la pestaña actual
     @State var selectedTab = 0
+    @State var showCreateThreadView = false
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             FeedView()
@@ -56,7 +58,13 @@ struct ThreadsTabView: View {
                 .tag(4)
     
         }
-        .sheet(isPresented: .constant(selectedTab == 2), onDismiss: {
+        /*
+         onChange se usa para ejecutar código en respuesta a cambios en la variable selectedTab
+         */
+        .onChange(of: selectedTab, perform: { newValue in
+            showCreateThreadView = selectedTab == 2
+        })
+        .sheet(isPresented: $showCreateThreadView, onDismiss: {
             selectedTab = 0
         }, content: {
             CreateThreadView()
