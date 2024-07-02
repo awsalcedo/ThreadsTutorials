@@ -22,6 +22,8 @@
 		502A11532C3316E000F49BD6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 502A11522C3316E000F49BD6 /* FirebaseStorage */; };
 		502A11572C333D0000F49BD6 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */; };
 		502A11592C3341E200F49BD6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11582C3341E200F49BD6 /* AuthService.swift */; };
+		502A115D2C34559B00F49BD6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A115C2C34559B00F49BD6 /* ContentViewModel.swift */; };
+		502A115F2C3469C200F49BD6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A115E2C3469C200F49BD6 /* LoginViewModel.swift */; };
 		509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */; };
 		509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */; };
 		50B000CC2C2627C100B3E511 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B000CA2C2627C100B3E511 /* RegistrationView.swift */; };
@@ -47,6 +49,8 @@
 		502A11492C3311CC00F49BD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		502A11582C3341E200F49BD6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		502A115C2C34559B00F49BD6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		502A115E2C3469C200F49BD6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		50B000CA2C2627C100B3E511 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationView.swift; path = Views/RegistrationView.swift; sourceTree = SOURCE_ROOT; };
@@ -180,6 +184,8 @@
 		502085CC2C248E9600A7554E /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				502A115B2C3454EC00F49BD6 /* View */,
+				502A115A2C3454DB00F49BD6 /* ViewModel */,
 				502085B92C24883900A7554E /* ContentView.swift */,
 			);
 			path = Root;
@@ -231,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				502A11562C333D0000F49BD6 /* RegistrationViewModel.swift */,
+				502A115E2C3469C200F49BD6 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +248,21 @@
 				502A11582C3341E200F49BD6 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		502A115A2C3454DB00F49BD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				502A115C2C34559B00F49BD6 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		502A115B2C3454EC00F49BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		509E75282C25E99600DC5AB9 /* ViewModifiers */ = {
@@ -430,10 +452,12 @@
 				502085BA2C24883900A7554E /* ContentView.swift in Sources */,
 				50B000E32C29F60200B3E511 /* ThreadCell.swift in Sources */,
 				50B000DD2C29DA1600B3E511 /* ActivityView.swift in Sources */,
+				502A115F2C3469C200F49BD6 /* LoginViewModel.swift in Sources */,
 				502A113F2C2C58B900F49BD6 /* CircularProfileImageView.swift in Sources */,
 				502A11412C2C5E6D00F49BD6 /* UserCell.swift in Sources */,
 				50B000D92C29D9A000B3E511 /* CreateThreadView.swift in Sources */,
 				502A11442C2C7A0E00F49BD6 /* ProfileThreadFilter.swift in Sources */,
+				502A115D2C34559B00F49BD6 /* ContentViewModel.swift in Sources */,
 				509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */,
 				509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */,
 				502085B82C24883900A7554E /* ThreadsTutorialsApp.swift in Sources */,
