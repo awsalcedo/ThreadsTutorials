@@ -24,6 +24,7 @@
 		502A11592C3341E200F49BD6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A11582C3341E200F49BD6 /* AuthService.swift */; };
 		502A115D2C34559B00F49BD6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A115C2C34559B00F49BD6 /* ContentViewModel.swift */; };
 		502A115F2C3469C200F49BD6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A115E2C3469C200F49BD6 /* LoginViewModel.swift */; };
+		502A117C2C3745A200F49BD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A117B2C3745A100F49BD6 /* User.swift */; };
 		509E752A2C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */; };
 		509E75362C2626BA00DC5AB9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */; };
 		50B000CC2C2627C100B3E511 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B000CA2C2627C100B3E511 /* RegistrationView.swift */; };
@@ -51,6 +52,7 @@
 		502A11582C3341E200F49BD6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		502A115C2C34559B00F49BD6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		502A115E2C3469C200F49BD6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		502A117B2C3745A100F49BD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		509E75292C25E9ED00DC5AB9 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
 		509E75352C2626BA00DC5AB9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		50B000CA2C2627C100B3E511 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationView.swift; path = Views/RegistrationView.swift; sourceTree = SOURCE_ROOT; };
@@ -128,6 +130,7 @@
 		502085C62C248C9300A7554E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				502A117B2C3745A100F49BD6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				50B000D52C29D91900B3E511 /* ExploreView.swift in Sources */,
 				50B000E12C29DA6C00B3E511 /* ProfileView.swift in Sources */,
 				50B000CC2C2627C100B3E511 /* RegistrationView.swift in Sources */,
+				502A117C2C3745A200F49BD6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
